@@ -5,18 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Russ EditZ📀</title>
   <style>
-    body {
-        background-image: url('lens.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        color: aliceblue;
-        margin: 0;
-        padding: 20px;
-        font-family: sans-serif;
-        position: relative;
+    /* Ensure html and body take full height and allow growth */
+    html, body {
+      height: 100%;
+      margin: 0;
     }
+
+    body {
+      background-color: black; /* Solid black background */
+      font-family: sans-serif;
+      padding: 20px;
+      box-sizing: border-box;
+      color: aliceblue;
+      height: 100vh; /* Keeps full height, or remove for auto-height */
+    }
+
+    /* Menu styles */
     .menu-icon {
       position: fixed;
       top: 20px;
@@ -50,6 +54,8 @@
       color: white;
       text-decoration: none;
     }
+
+    /* Image hover effect */
     img {
       -webkit-user-drag: none;
       user-drag: none;
@@ -59,62 +65,67 @@
       -ms-user-select: none;
     }
     img:hover, video:hover {
-        transform: scale(1.1);
-        transition: 0.3s ease;
+      transform: scale(1.1);
+      transition: 0.3s ease;
     }
+
+    /* Container for items */
     .items-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
+
+    /* Individual item styles */
     .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 1 1 150px;
-        max-width: 200px;
-        min-width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1 1 150px;
+      max-width: 200px;
+      min-width: 100px;
     }
+
     .item img, .item video {
-        width: 100%;
-        height: auto;
-        border: 1px solid #ccc;
-        border-radius: 8px;
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
     }
+
     .caption {
-        margin-top: 8px;
-        text-align: center;
-        font-size: 1em;
+      margin-top: 8px;
+      text-align: center;
+      font-size: 1em;
     }
   </style>
 </head>
 <body>
+  <!-- Hamburger menu icon -->
   <div class="menu-icon" id="menuIcon">
     &#9776;
   </div>
+  <!-- Menu -->
   <div class="menu" id="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </div>
+
+  <!-- Main Content -->
   <hr>
   <h4><p style="width: 15%; height: 3%;">Welcome to </p></h4>
   <div style="display:inline-block; padding:0.7% 1%; background-color:#c92b2b; border-radius:2%;">
     Russ EditZ📀
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  We're excited to have you here. At Russ Editz, we're passionate about bringing your vision to life through expert editing and creative solutions. This is just a glimpse of what we can do. <br>
+  <br><br><br><br>
+  We’re excited to have you here. At Russ Editz, we’re passionate about bringing your vision to life through expert editing and creative solutions. This is just a glimpse of what we can do. <br>
   stay tuned for more!
-  <br>
-  <hr>
+  <br><hr>
   <h4><p>Check out my work below!</p></h4>
-  <br>
-  <br>
+  <br><br>
   <div class="items-container">
     <div class="item">
       <a href="birthdaygirl.html" target="_blank">
@@ -159,10 +170,11 @@
       <div class="caption">Kid on Kerb</div>
     </div>
   </div>
-  <br>
-  <br>
+  <br><br>
   Get in touch with me on my socials:<br>
   @<a href="https://wa.me/27731036987" target="_blank"><button>whatsapp.(This is where you put your whatsapp link).</button></a>
+
+  <!-- Toggle menu script -->
   <script>
     const menuIcon = document.getElementById('menuIcon');
     const menu = document.getElementById('menu');
@@ -174,9 +186,12 @@
       }
     });
   </script>
-  <footer style="text-align: center; margin-top: 20px; color: #fff;">
-  &copy; 2025 Russ EditZ📀. All rights reserved.
-</footer>
-<p>Disclaimer: This website is for demonstration purposes Only!!!</p>
+
+  <!-- Footer -->
+  <footer style="text-align:center; margin-top:20px; color:#fff;">
+    &copy; 2025 Russ EditZ📀. All rights reserved.
+  </footer>
+
+  <p>Disclaimer: This website is for demonstration purposes Only!!!</p>
 </body>
 </html>
