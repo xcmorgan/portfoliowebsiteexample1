@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Russ EditZ About</title>
+  <style>
+    body {
+      background-image: url('russ.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    /* Menu styles (same as previous) */
+    .menu-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1000;
+      background-color: rgba(0,0,0,0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .menu {
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      background-color: rgba(0,0,0,0.8);
+      border-radius: 8px;
+      display: none;
+      padding: 10px;
+      z-index: 999;
+    }
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      margin: 10px 0;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+    }
+    /* Rest of your styles... */
+    .content-container {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 20px;
+      padding: 20px;
+    }
+    .russ-image {
+      display: none;
+    }
+    .speech-box {
+      background-color: #ffffff8a;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 600px;
+      font-size: 1em;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hamburger icon -->
+  <div class="menu-icon" id="menuIcon">
+    &#9776;
+  </div>
+  <!-- Menu -->
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Your existing content -->
+  <div style="display:inline-block; padding:1% 2%; background-color:#ffffff; border-radius:2%;">
+    About this page
+  </div>
+  <h5><p style="color: #ffffff;">!!This page is a prototype. All characters and content are fictional.!!</p></h5>
+  <a href="index.html"><button>Home</button></a>
+  <hr>
+  <h4><p style="color: #ffffff;">
+  <div style="display:inline-block; padding:1% 2%; background-color:#ffffff50; border-radius:2%;">
+  ---
+  **About Russ Editz**
+  Russ Editz is all about helping you improve your videos and photos. We're still learning and growing, but we’re passionate about making your projects look their best. Whether you need quick edits or something more detailed, we’re here to help. Stick with us as we get better and create something great together.
+  </p></h4>
+  </div>
+  <div class="content-container">
+    <!-- Only keep the text bubble -->
+    <div class="speech-box">
+      <h4>Who is Russ?</h4>
+      <p>
+        Hi, I’m Russ, the founder of Russ Editz. I’ve always been passionate about editing and creating content that truly stands out. I love working on projects where I can bring ideas to life and make them shine. With a keen eye for detail and a constant drive to learn and improve, I’m dedicated to helping others realize their vision and turn their creative concepts into something amazing. Whether it’s editing photos or videos, my goal is to make your content look its best and help you stand out.
+      </p>
+    </div>
+  </div>
+  <!-- Your footer -->
+  <footer style="text-align: center; margin-top: 20px; color: #fff;">
+    &copy; 2025 Russ EditZ📀. All rights reserved.
+  </footer>
+  <!-- Script for menu toggle -->
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const menu = document.getElementById('menu');
+    menuIcon.addEventListener('click', () => {
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
